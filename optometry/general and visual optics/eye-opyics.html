@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep4U - Study Platform for Students</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/web.css">
+    <link rel="stylesheet" href="../../css/bodysheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+<nav>
+    <!-- Logo and Brand -->
+    <div class="header">
+      <i class="fa-solid fa-book book-icon"></i>
+      <a href="../../index.html" class="prep4U-text">Prep4U</a>
+    </div>
+
+
+        <!-- Navigation Links -->
+   <div class="nav-links">
+    <ul class="trigger">
+    <li><a href="../../index.html">Home</a></li>
+   
+    <li class="has-dropdown">
+      <a href="#quiz">Quiz</a>
+      <ul>
+        <li><a href="../../radiology/rad-quiz-intro.html">Radiography</a></li>
+        <li><a href="../../optometry/opt-quiz-intro.html">Optometry</a></li>
+      </ul>
+    </li>
+   
+    <li class="has-dropdown">   
+      <a href="#subjects">Subjects</a>
+      <ul>
+        <li><a href="../../radiology/radiography-intro.html">Radiography</a></li>
+        <li><a href="../../optometry/optometry-intro.html">Optometry</a></li>
+      </ul>
+    </li>
+   
+    <li><a href="../../about-us.html">About Us</a></li>
+    <li><a href="../../contact.html">Contact Us</a></li>
+  </ul>
+</div>
+</nav>
+ 
+   <!-- Page Header -->
+  <header class="bg-white text-center py-10 px-4 rounded-xl shadow-md max-w-7xl mx-auto mt-6">
+    <h1 class="text-5xl sm:text-6xl font-bold text-gray-800">Optics</h1>
+  </header>
+
+
+      <!-- Main Content -->
+  <main class="flex flex-col gap-6 max-w-7xl mx-auto mt-8 px-4">
+
+
+<section class="w-full md:w-3/4 mx-auto">
+  <article class="bg-white p-6 rounded-xl shadow-md">
+    <div class="container">
+
+      <h1 style="font-size: 26px;">🧠 How the Eye Uses Optics: Vision, Accommodation & Common Disorders</h1>
+      <p>In this section, we’ll bridge what we learned about lenses and light into how the human eye works, and what happens when it doesn’t. You’ll discover how vergence and diopters directly relate to eye health, and how lenses are used to fix refractive errors.</p>
+
+      <hr>
+
+      <h2 style="font-size: 24px;">👁️ The Eye as a Living Optical System</h2>
+      <p>Think of your eye as a biological camera:</p>
+      <ul>
+        <li><strong>Cornea:</strong> Curved outer surface → Does most of the bending (refraction)</li>
+        <li><strong>Aqueous Humor & Vitreous Humor:</strong> Transparent media that allow light to pass</li>
+        <li><strong>Lens:</strong> Fine-tunes focus → changes shape to adapt to near/far objects</li>
+        <li><strong>Retina:</strong> The “screen” at the back of the eye where the image is formed</li>
+      </ul>
+
+      <h2 style="font-size: 24px;">🔄 The Process:</h2>
+      <ol>
+        <li>Light enters through the cornea.</li>
+        <li>It's bent (refracted) and passes through the pupil.</li>
+        <li>The lens adjusts shape to focus the image.</li>
+        <li>A sharp image lands on the retina, which sends signals to the brain.</li>
+      </ol>
+
+      <hr>
+
+      <h2 style="font-size: 24px;">🔁 Accommodation: Auto-Focusing of the Eye</h2>
+      <h3>🧠 What Is It?</h3>
+      <p>Accommodation is the eye’s ability to change its lens shape to maintain a clear image as object distance changes.</p>
+      <ul>
+        <li>Near object → Ciliary muscles contract → Lens becomes rounder → Increases power (more positive diopters)</li>
+        <li>Far object → Muscles relax → Lens becomes flatter → Reduces power</li>
+      </ul>
+      <p>This means your eye is constantly adjusting its vergence and lens power in real-time.</p>
+
+      <h3>🚫 When It Goes Wrong: Refractive Errors</h3>
+      <p>When the system doesn’t perfectly focus light on the retina, you get blurry vision. This is where diopters and corrective lenses come in.</p>
+
+      <h4>📉 1. Myopia (Nearsightedness)</h4>
+      <ul>
+        <li><strong>Problem:</strong> Eye too long, or lens too strong</li>
+        <li>Light converges in front of retina</li>
+        <li><strong>Fix:</strong> Use concave (diverging) lens → negative diopters (e.g., -2.00 D)</li>
+      </ul>
+
+      <h4>📈 2. Hyperopia (Farsightedness)</h4>
+      <ul>
+        <li><strong>Problem:</strong> Eye too short, or lens too weak</li>
+        <li>Light converges behind retina</li>
+        <li><strong>Fix:</strong> Use convex (converging) lens → positive diopters (e.g., +2.50 D)</li>
+      </ul>
+
+      <h4>🎯 3. Astigmatism</h4>
+      <ul>
+        <li><strong>Problem:</strong> Irregular curvature of cornea/lens</li>
+        <li>Light focuses on multiple points instead of one</li>
+        <li><strong>Fix:</strong> Use cylindrical lenses to correct specific meridians</li>
+      </ul>
+
+      <h4>🔄 4. Presbyopia</h4>
+      <ul>
+        <li>Age-related loss of accommodation ability</li>
+        <li>Lens becomes less flexible</li>
+        <li><strong>Fix:</strong> Reading glasses or bifocals (+1.00 to +3.00 D)</li>
+      </ul>
+
+      <hr>
+
+      <h2 style="font-size: 24px;">🧮 Calculating Lens Prescriptions: Diopters in Action</h2>
+      <p>Let’s say you can only clearly see objects at 0.5 meters. You want to see clearly at infinity (∞ meters). You need a lens with:</p>
+      <p><em>Power = 1/desired distance − 1/current clear distance = 1/∞ − 1/0.5 = -2.00 D</em></p>
+      <p>A -2.00 D concave lens will fix your myopia.</p>
+
+      <hr>
+
+      <h2 style="font-size: 24px;">📚 Summary Table: Eye Disorders and Corrections</h2>
+      <table style="width:100%; border-collapse: collapse;" border="1">
+        <thead>
+          <tr>
+            <th>Condition</th>
+            <th>Cause</th>
+            <th>Lens Type</th>
+            <th>Diopter Sign</th>
+            <th>Correction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Myopia</td>
+            <td>Eye too long / strong lens</td>
+            <td>Concave</td>
+            <td>Negative</td>
+            <td>Distance clarity</td>
+          </tr>
+          <tr>
+            <td>Hyperopia</td>
+            <td>Eye too short / weak lens</td>
+            <td>Convex</td>
+            <td>Positive</td>
+            <td>Near clarity</td>
+          </tr>
+          <tr>
+            <td>Astigmatism</td>
+            <td>Irregular curvature</td>
+            <td>Cylindrical</td>
+            <td>Mixed</td>
+            <td>Clear all axes</td>
+          </tr>
+          <tr>
+            <td>Presbyopia</td>
+            <td>Aging / stiff lens</td>
+            <td>Convex</td>
+            <td>Positive</td>
+            <td>Reading aid</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2 style="font-size: 24px;">👓 Progressive Lenses: A Modern Solution</h2>
+      <p>Modern corrective lenses often use progressive diopter zones:</p>
+      <ul>
+        <li>Top: for distance (0.00 to -X.XX D)</li>
+        <li>Middle: for computer use</li>
+        <li>Bottom: for reading (+1.00 to +2.50 D)</li>
+      </ul>
+      <p>This allows smooth vision correction across multiple focal lengths—perfect for presbyopic users.</p>
+
+    </div>
+  </article>
+</section>
+
+
+    <section class="w-full md:w-3/4 mx-auto">
+  <div class="bg-white p-6 rounded-xl shadow-md">
+    <h2 class="text-2xl font-semibold mb-2 text-gray-800">About Us</h2>
+    <p class="text-gray-600">Our main aim is to help students excel in their exams through comprehensive study materials and practice tests.</p>
+  </div>
+  </section>
+</main>
+
+
+
+
+    <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 mt-10 rounded-xl mx-auto w-full">
+    <p class="text-gray-700">&copy; 2025 Prep4U. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
+

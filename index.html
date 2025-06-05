@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep4U - Study Platform for Students</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+<nav>
+    <!-- Logo and Brand -->
+    <div class="header">
+      <i class="fa-solid fa-book book-icon"></i>
+      <a href="index.html" class="prep4U-text">Prep4U</a>
+    </div>
+
+
+        <!-- Navigation Links -->
+   <div class="nav-links">
+    <ul class="trigger">
+    <li><a href="index.html">Home</a></li>
+   
+    <li class="has-dropdown">
+      <a href="#quiz">Quiz</a>
+      <ul>
+        <li><a href="radiology/rad-quiz-intro.html">Radiography</a></li>
+        <li><a href="radiology/rad-quiz-intro.html">Optometry</a></li>
+      </ul>
+    </li>
+   
+    <li class="has-dropdown">   
+      <a href="#subjects">Subjects</a>
+      <ul>
+        <li><a href="radiology/radiography-intro.html">Radiography</a></li>
+        <li><a href="optometry/optometry-intro.html">Optometry</a></li>
+      </ul>
+    </li>
+   
+    <li><a href="about-us.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+</nav>
+
+<!-- Hero Section -->
+    <div class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Master Concepts with Ease
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-xl">
+                    Prep4Med helps you study smarter with interactive quizzes, progress tracking, and personalized learning paths.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#quiz" class="bg-white text-blue-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition duration-300">
+                        Start Quizzing
+                    </a>
+                    <a href="#subjects" class="bg-blue-800 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-blue-900 transition duration-300">
+                        Explore Subjects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Explore Subjects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Radiographer -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden subject-card">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-x-ray text-blue-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Radiographer</h3>
+                                <p class="text-gray-500">Medical imaging specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Comprehensive resources covering radiographic anatomy, imaging techniques, radiation physics, and patient care.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Anatomy</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Physics</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Techniques</span>
+                            </div>
+                            <a href="radiology/radiography-intro.html" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                                 Explore
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Optometry -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden subject-card">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-green-100 p-3 rounded-lg">
+                                <i class="fas fa-eye text-green-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Optometry</h3>
+                                <p class="text-gray-500">Eye care and vision science</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Detailed materials on ocular anatomy, visual optics, contact lenses, binocular vision, and clinical procedures.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Anatomy</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Optics</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Clinical</span>
+                            </div>
+                            <a href="optometry/optometry-intro.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                             Explore
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden subject-card coming-soon">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex-shrink-0 bg-purple-100 p-3 rounded-lg">
+                                <i class="fas fa-plus-circle text-purple-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">More Subjects</h3>
+                                <p class="text-gray-500">Expanding our curriculum</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            We're constantly adding new subjects to help you in your studies. Check back soon for updates!
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Coming</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Soon</span>
+                            </div>
+                            <button class="bg-gray-400 text-white px-4 py-2 rounded-md text-sm font-medium cursor-not-allowed" disabled>
+                                Coming Soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Test Your Knowledge</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Radiographer Quiz -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden subject-card">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-x-ray text-blue-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Radiographer Quiz</h3>
+                                <p class="text-gray-500">Test your radiology knowledge</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-gray-600 mb-4">
+                                Challenge yourself with our comprehensive radiography quizzes covering anatomy, positioning, and imaging techniques.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-gray-500">10 questions available</span>
+                                </div>
+                                <a href="radiology/rad-quiz-intro.html" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                                 Learn More
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Optometry Quiz -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden subject-card">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-green-100 p-3 rounded-lg">
+                                <i class="fas fa-eye text-green-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Optometry Quiz</h3>
+                                <p class="text-gray-500">Test your eye care knowledge</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-gray-600 mb-4">
+                                Assess your understanding of ocular anatomy, vision science, and clinical optometry with our specialized quizzes.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <span class="text-sm text-gray-500">10 questions available</span>
+                                </div>
+                                  <a href="optometry/opt-quiz-intro.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                             Learn More
+                         </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Why Choose Prep4U?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 mb-4">
+                        <i class="fas fa-brain text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Quiz interface</h3>
+                    <p class="text-gray-500">
+                        No matter where you are, stay exam-ready with our flexible online practice tools. Designed for the modern learner, our platform allows you to study on your schedule—at home, on the go, or during a break.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600 mb-4">
+                        <i class="fas fa-chart-pie text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Practice Power</h3>
+                    <p class="text-gray-500">
+                        Unlock your true potential by committing to consistent, targeted practice every day. Whether you're preparing for competitive exams or professional certifications, our expertly designed practice sets help you strengthen core concepts, sharpen problem-solving skills, and reduce exam anxiety.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600 mb-4">
+                        <i class="fas fa-mobile-alt text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-500">
+                        Unlock learning on your terms with our fully responsive platform—designed to work seamlessly on all devices. Whether you're using a phone, tablet, or computer, your study experience stays smooth, flexible, and accessible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<div style="border: 2px solid #f39c12; background-color: #fff8e1; padding: 15px; border-radius: 8px; color: #c0392b; font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; text-align: center;">
+  		<strong>Note:</strong> This website is under development.
+	</div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Prep4Med</h3>
+                    <p class="text-gray-400">
+                        An essential companion for structured, in-depth educational success—offering expertly curated content, personalized learning tools, and clear guidance to help learners excel with confidence and clarity.
+                    </p>
+                    
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Subjects</h3>
+                    <ul class="space-y-2">
+                        <li><a href="radiology/radiography-intro.html" class="text-gray-400 hover:text-white">Radiographer</a></li>
+                        <li><a href="optometry/optometry-intro.html" class="text-gray-400 hover:text-white">Optometry</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Coming Soon</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#quiz" class="text-gray-400 hover:text-white">Quizzes</a></li>
+                        <li><a href="#progress" class="text-gray-400 hover:text-white">Progress Tracking</a></li>
+                        <li><a href="#subjects" class="text-gray-400 hover:text-white">Study Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-400 mr-2"></i>
+                            <span class="text-gray-400">
+                                <a href="mailto:prep4444u@gmail.com" class="text-gray-400 hover:text-white">Click Here to Mail</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Prep4U. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to animate progress bars when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const width = entry.target.style.width;
+                        entry.target.style.width = '0%';
+                        setTimeout(() => {
+                            entry.target.style.width = width;
+                        }, 100);
+                    }
+                });
+            }, {threshold: 0.1});
+            
+            progressBars.forEach(bar => {
+                observer.observe(bar);
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

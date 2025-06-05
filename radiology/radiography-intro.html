@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prep4U - Study Platform for Students</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/web.css" />
+  <link rel="stylesheet" href="../css/bodysheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <!-- Logo and Brand -->
+  <div class="header">
+    <i class="fa-solid fa-book book-icon"></i>
+    <a href="../index.html" class="prep4U-text">Prep4U</a>
+  </div>
+
+  <!-- Navigation Links -->
+  <div class="nav-links">
+    <ul class="trigger">
+      <li><a href="../index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#quiz">Quiz</a>
+        <ul>
+          <li><a href="../radiology/rad-quiz-intro.html">Radiography</a></li>
+          <li><a href="../optometry/opt-quiz-intro.html">Optometry</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#subjects">Subjects</a>
+        <ul>
+          <li><a href="../radiology/radiography-intro.html">Radiography</a></li>
+          <li><a href="../optometry/optometry-intro.html">Optometry</a></li>
+        </ul>
+      </li>
+      <li><a href="../about-us.html">About Us</a></li>
+      <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<header class="bg-white text-center py-10 px-4 rounded-xl shadow-md max-w-7xl mx-auto mt-6">
+  <h1 class="text-5xl sm:text-6xl font-bold text-gray-800">Radiography: An Overview</h1>
+</header>
+
+<!-- Main Content -->
+<main class="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto mt-8 px-4">
+  <!-- Left Column - Main Content -->
+  <section class="w-full md:w-2/3">
+    <article class="bg-white p-6 rounded-xl shadow-md">
+      <div class="container">
+        <h1 class="text-2xl md:text-3xl font-semibold mb-4">Radiography: An Overview</h1>
+        <p>Radiography is a vital diagnostic imaging technique that uses X-rays, a form of electromagnetic radiation, to produce images of the internal structures of the body. It is one of the most commonly used and accessible medical imaging methods in clinical practice, widely employed in hospitals, clinics, and emergency care settings.</p>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Principle and Process</h2>
+        <p>The basic principle of radiography relies on the differential absorption of X-rays by various tissues in the body. When X-rays are directed toward the body, they pass through it and are absorbed at different rates by different tissues:</p>
+        <ul class="list-disc list-inside mb-4">
+          <li><strong>Dense tissues</strong>, such as bones, absorb more X-rays and appear white or light on the resulting image.</li>
+          <li><strong>Soft tissues</strong>, such as muscles, organs, and fat, absorb fewer X-rays and appear in shades of gray.</li>
+          <li><strong>Air-filled spaces</strong>, like the lungs, absorb the least and appear black.</li>
+        </ul>
+        <p>The X-rays that pass through the body are captured on a detector or film placed behind the patient, creating a two-dimensional image known as a radiograph.</p>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Types of Radiography</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li><strong>Conventional Radiography (X-rays):</strong> Used primarily for imaging bones, joints, and the chest.</li>
+          <li><strong>Digital Radiography (DR):</strong> Uses digital sensors for faster processing and improved image quality.</li>
+          <li><strong>Computed Radiography (CR):</strong> Transitional technology using special cassettes scanned into digital format.</li>
+          <li><strong>Fluoroscopy:</strong> Provides real-time moving images for procedures like barium studies and catheter placements.</li>
+          <li><strong>Portable Radiography:</strong> Used in ICUs, ERs, or bedside when patients cannot be moved.</li>
+        </ul>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Applications of Radiography</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li><strong>Orthopedics:</strong> Fractures, dislocations, arthritis, bone infections.</li>
+          <li><strong>Pulmonology:</strong> Pneumonia, tuberculosis, lung cancer, chest conditions.</li>
+          <li><strong>Dentistry:</strong> Teeth and jaw imaging, dental diagnoses.</li>
+          <li><strong>Cardiology:</strong> Heart size assessment, vascular conditions.</li>
+          <li><strong>Emergency Medicine:</strong> Trauma, foreign objects, internal injuries.</li>
+        </ul>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Advantages</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>Non-invasive and relatively low-cost.</li>
+          <li>Quick imaging process and immediate results with digital systems.</li>
+          <li>Essential for diagnosing and monitoring various conditions.</li>
+          <li>Available in both urban and rural settings.</li>
+        </ul>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Limitations and Safety</h2>
+        <p>While radiography is generally safe, it involves exposure to ionizing radiation, which can pose risks if used excessively. Its use is regulated and justified, especially for children and pregnant women.</p>
+        <div class="note">
+          <strong>To minimize exposure:</strong>
+          <ul class="list-disc list-inside">
+            <li>Lead aprons or shields may be used.</li>
+            <li>The lowest effective dose is always aimed for (ALARA principle – As Low As Reasonably Achievable).</li>
+          </ul>
+        </div>
+
+        <h2 class="text-xl md:text-2xl font-semibold mt-6 mb-2">Conclusion</h2>
+        <p>Radiography is a cornerstone of modern diagnostic medicine. Its ability to provide fast, accurate, and non-invasive insight into internal structures makes it indispensable. Ongoing advancements in digital technology continue to improve image quality, reduce radiation exposure, and broaden radiography's use in medical, veterinary, and industrial fields.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Right Column - Navigation -->
+  <section class="w-full md:w-1/3">
+    <article class="bg-white p-6 rounded-xl shadow-md">
+      <!-- Section 1 -->
+      <div x-data="{ open: true }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Basic Radiographic Physics
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li> <a href="../radiology/basic physics/properties-of-x-rays.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Properties of X-rays</a></li>
+          <li><a href="../radiology/basic physics/production-of-x-rays.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Production of X-rays</a></li>
+          <li><a href="../radiology/basic physics/image-formation.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Image Formation</a></li>
+          <li><a href="../radiology/basic physics/components-of-x-rays.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Components of X-rays</a></li>
+          <li><a href="../radiology/basic physics/inter-action-with-matter.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Interaction with matter</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 2 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Radiographic Positioning
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/Radiographic Positioning/patient-positioning.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Correct patient positioning for different body parts (e.g., chest, spine, extremities)</a></li>
+          <li><a href="../radiology/Radiographic Positioning/error-in-positioning.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Common positioning errors</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Radiographic Procedures
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/radiographic procedures/contrast-studies.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Contrast studies</a></li>
+          <li><a href="../radiology/radiographic procedures/fluroscopy.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Fluoroscopy</a></li>
+          <li><a href="../radiology/radiographic procedures/dr-and-cr.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Digital and computed radiography</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 4 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Anatomy and Physiology
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/ana-and-physio/anatomy.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Anatomy</a></li>
+          <li><a href="../radiology/ana-and-physio/physiology.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Physiology</a></li>
+          <li><a href="../radiology/ana-and-physio/identity-of-radiographs.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Identification on radiographs</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 5 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Radiation Protection and Safety
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/radiation protection and safety/alara.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">ALARA principle</a></li>
+          <li><a href="../radiology/radiation protection and safety/lead-protection.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Use of lead shielding</a></li>
+          <li><a href="../radiology/radiation protection and safety/radiation-dose-limit-and-monitoring.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Radiation dose limits and exposure monitoring</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 6 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Image Evaluation and Quality
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/image quality/contrast-details.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Sharpness, contrast, and density</a></li>
+          <li><a href="../radiology/image quality/common-artifacts.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Common artifacts</a></li>
+          <li><a href="../radiology/image quality/Poor-Quality Images in Radiography.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Troubleshooting poor-quality images</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 7 -->
+      <div x-data="{ open: false }" class="bg-white p-6 rounded-xl shadow-md">
+        <h2 @click="open = !open" class="text-2xl font-semibold mb-2 text-gray-800 cursor-pointer select-none flex justify-between items-center">
+          Professional Ethics and Patient Care
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h2>
+        <ul x-show="open" x-transition class="space-y-2 text-lg">
+          <li><a href="../radiology/Professional Ethics and Patient Care/comunication-patient.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Communication with patients</a></li>
+          <li><a href="../radiology/Professional Ethics and Patient Care/legal-ethics.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Legal and ethical responsibilities</a></li>
+          <li><a href="../radiology/Professional Ethics and Patient Care/infection-control.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">Infection control in radiology</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us Section -->
+      <div class="bg-white p-6 rounded-xl shadow-md mt-6">
+        <h2 class="text-2xl font-semibold mb-2 text-gray-800">About Us</h2>
+        <p class="text-gray-600">Our main aim is to help students excel in their radiography exams through comprehensive study materials and practice tests.</p>
+      </div>
+    </article>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-200 text-center p-4 mt-10 rounded-xl mx-auto w-full">
+  <p class="text-gray-700">&copy; 2025 Prep4U. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

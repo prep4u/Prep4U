@@ -74,8 +74,8 @@
   display: none;
 
   position: absolute;
-  top: 0.6rem;
-  right: 1rem;
+  top: 0.7rem;
+  right: 2rem;
   z-index: 1000;
 
   float: right; /* <-- added float */

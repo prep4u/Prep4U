@@ -194,9 +194,10 @@
       }
 
       .nav-links a {
-        width: 200%;
+        width: 100%;
         padding: 0.75rem 1rem;
         text-align: centre;
+        display: block;
       }
 
       .trigger ul {

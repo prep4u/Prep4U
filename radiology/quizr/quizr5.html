@@ -286,7 +286,13 @@ document.querySelectorAll('input[type="radio"]').forEach(radio => {
                 <div id="resultBar" class="bg-blue-500 h-6 text-white text-sm text-center leading-6 transition-all duration-500" style="width: 0%">0%</div>
             </div>
         `;
-
+        output += `
+            <div class="flex justify-between mt-6 text-blue-600 font-medium">
+              <a href="quizr4.html" id="prevset" title="Go to the previous set" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">← Previous</a>
+              <a href="quizr5.html" id="sameset" title="Review this set again" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">View Again</a>
+              <a href="quizr6.html" id="nextset" title="Go to the next set" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">Next →</a>
+            </div>
+        `;
         document.getElementById("quizForm").style.display = "none";
         const resultDiv = document.getElementById("finalResult");
         resultDiv.innerHTML = output;

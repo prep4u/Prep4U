@@ -189,11 +189,14 @@
 
       .trigger > li {
         width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: centre;
       }
 
       .nav-links a {
         width: 200%;
         padding: 0.75rem 1rem;
+        text-align: centre;
       }
 
       .trigger ul {

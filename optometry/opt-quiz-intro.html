@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/bodysheet.css">
     <link rel="icon" href="../image/book-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5417203851919488"
      crossorigin="anonymous"></script>
       <!-- Google tag (gtag.js) -->
@@ -31,30 +32,35 @@
     <!-- Logo and Brand -->
     <div class="header">
       <i class="fa-solid fa-book book-icon"></i>
-      <a href="../index.html" class="prep4U-text">Prep4U</a>
-    <!-- Hamburger Menu Button (mobile) -->
+      <a href="../prep4u.html" class="prep4U-text">Prep4U</a>
+       <!-- Hamburger Menu Button (mobile) -->
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
     </div>
 
-
         <!-- Navigation Links -->
-   <div class="nav-links">
+   <div class="nav-links" id="navLinks">
     <ul class="trigger">
-    <li><a href="../index.html">Home</a></li>
+    <li><a href="../prep4u.html">Home</a></li>
    
     <li class="has-dropdown">
       <a href="#quiz">Quiz</a>
       <ul>
-        <li><a href="../radiology/rad-quiz-intro.html">Radiography</a></li>
-        <li><a href="../optometry/opt-quiz-intro.html">Optometry</a></li>
+        <li><a href="../radiology/rad-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Radiography</a></li>
+        <li><a href="../optometry/opt-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Optometry</a></li>
+        <li><a href="../pharmacy/phar-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Pharmacy</a></li>        
+        <li><a href="../G.K/gk-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">General Knowledge</a></li>
+        <li><a href="../IQ/iq-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">I.Q</a></li>
       </ul>
     </li>
    
     <li class="has-dropdown">   
       <a href="#subjects">Subjects</a>
       <ul>
-        <li><a href="../radiology/radiography-intro.html">Radiography</a></li>
-        <li><a href="../optometry/optometry-intro.html">Optometry</a></li>
+        <li><a href="../radiology/radiography-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Radiography</a></li>
+        <li><a href="../optometry/optometry-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Optometry</a></li>
+        <li><a href="../pharmacy/pharmacy-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Pharmacy</a></li>        
+        <li><a href="../G.K/G-K-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">General Knowledge</a></li>
+        <li><a href="../IQ/iq-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">I.Q</a></li>
       </ul>
     </li>
    
@@ -238,7 +244,12 @@
     <aside class="md:w-1/4">
      <div class="bg-white p-6 rounded-xl shadow-lg mb-6 transition-shadow hover:shadow-xl">
   <h2 class="text-2xl font-bold mb-4 text-gray-800">Quiz Links</h2>
-  <ul class="space-y-3">
+          <div x-data="{ open: false }">
+        <h1 @click="open = !open" class="text-2xl font-semibold mb-2 cursor-pointer select-none text-gray-800 transition duration-300 ease-in-out hover:text-blue-600 hover:animate-bounce  select-none flex justify-between items-center">
+         Set 1-10
+          <i :class="open ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+        </h1>
+  <ul class="space-y-3" x-show="open" x-transition class="space-y-2 text-lg">
     <li>
       <a href="quizo/quizo1.html" class="block px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium transition-all duration-300 transform hover:bg-blue-600 hover:text-white hover:translate-x-2">
         ➤ Practice set No: 1
@@ -299,12 +310,12 @@
       </a>
     </li>
   </ul>
-</div>
+</div></div>
 
       
       <div class="bg-white p-6 rounded-xl shadow-md">
         <h2 class="text-2xl font-semibold mb-2 text-gray-800">About Us</h2>
-        <p class="text-gray-600">Our main aim is to help students excel in their radiography exams through comprehensive study materials and practice tests.</p>
+        <p class="text-gray-600">Our main aim is to help students excel in their exams through comprehensive study materials and practice tests.</p>
       </div>
     </aside>
   </main>

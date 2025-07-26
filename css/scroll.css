@@ -1,0 +1,56 @@
+/* Scrollbar height */
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Scrollbar track */
+.scroll-container::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Tailwind gray-200 */
+  border-radius: 100vh;
+}
+
+/* Scrollbar thumb with dotted pattern */
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 100vh;
+
+  /* Dotted pattern using radial gradient */
+  background-image: repeating-radial-gradient(
+    circle,
+    #3b82f6 0,
+    #3b82f6 2px,
+    transparent 3px,
+    transparent 6px
+  );
+
+  /* Animate dots moving from right to left */
+  animation: scroll-dots-move-rtl 2s linear infinite;
+}
+
+/* Hover: darker dots and faster animation */
+.scroll-container:hover::-webkit-scrollbar-thumb {
+  background-image: repeating-radial-gradient(
+    circle,
+    #2563eb 0,
+    #2563eb 2px,
+    transparent 3px,
+    transparent 6px
+  );
+  animation-duration: 1s;
+}
+
+/* Animation keyframes: move background from 0 to -12px on X axis */
+@keyframes scroll-dots-move-rtl {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -12px 0;
+  }
+}
+
+/* Firefox fallback */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #e5e7eb;
+}

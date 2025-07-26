@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f4f7fa;
   color: #333;
 }
@@ -26,17 +26,24 @@ h1 {
 }
 
 h2 {
-  font-size: 24px !important; /* Adjusted size for better distinction */
-  margin-top: 12px; /* Balanced with top margin */
-  line-height: 1.5;
+  font-size: 24px !important;
+  margin-top: 20px !important; /* More space from above */
+  margin-bottom: 12px;
+  line-height: 1.4;
   font-weight: 600 !important;
+  color: #2563eb; /* Soft, approachable blue */
+  padding-left: 10px;
+  border-left: 3px solid #93c5fd; /* Light blue accent */
+  font-family: 'Segoe UI', 'Arial Rounded MT Bold', sans-serif;
+  letter-spacing: 0.3px;
 }
+
 
 h3 {
   font-size: 20px !important; /* A bit larger to maintain hierarchy */
   line-height: 1.5;
   font-weight: 500 !important;
-  margin-top: 8px; /* Slight margin for separation */
+  margin-top: 5px !important; /* Slight margin for separation */
 }
 h4 {
   font-size: 19px !important; /* A bit larger to maintain hierarchy */
@@ -48,13 +55,13 @@ h4 {
 p {
   margin-bottom: 20px; /* Balanced spacing */
   font-size: 18px !important; /* Increased font size for readability */
-  line-height: 1.75; /* Slightly increased for better legibility */
-  margin-top: 16px;
+  line-height: 1.5; /* Slightly increased for better legibility */
+  margin-top: 10px !important;
 }
 
 /* Lists */
 ul {
-  margin-left: 30px; /* Slightly increased indentation for visual clarity */
+  margin-left: 8px !important; /* Slightly increased indentation for visual clarity */
 }
 
 li {

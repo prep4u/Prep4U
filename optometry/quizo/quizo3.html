@@ -31,31 +31,35 @@
     <!-- Logo and Brand -->
     <div class="header">
       <i class="fa-solid fa-book book-icon"></i>
-      <a href="../../index.html" class="prep4U-text">Prep4U</a>
-    <!-- Hamburger Menu Button (mobile) -->
+      <a href="../../prep4u.html" class="prep4U-text">Prep4U</a>
+       <!-- Hamburger Menu Button (mobile) -->
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
     </div>
 
-
-
         <!-- Navigation Links -->
-   <div class="nav-links">
+   <div class="nav-links" id="navLinks">
     <ul class="trigger">
-    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../prep4u.html">Home</a></li>
    
     <li class="has-dropdown">
       <a href="#quiz">Quiz</a>
       <ul>
-        <li><a href="../../radiology/rad-quiz-intro.html">Radiography</a></li>
-        <li><a href="../../optometry/opt-quiz-intro.html">Optometry</a></li>
+        <li><a href="../../radiology/rad-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Radiography</a></li>
+        <li><a href="../../optometry/opt-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Optometry</a></li>
+        <li><a href="../../pharmacy/phar-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Pharmacy</a></li>        
+        <li><a href="../../G.K/gk-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">General Knowledge</a></li>
+        <li><a href="../../IQ/iq-quiz-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">I.Q</a></li>
       </ul>
     </li>
    
     <li class="has-dropdown">   
       <a href="#subjects">Subjects</a>
       <ul>
-        <li><a href="../../radiology/radiography-intro.html">Radiography</a></li>
-        <li><a href="../../optometry/optometry-intro.html">Optometry</a></li>
+        <li><a href="../../radiology/radiography-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Radiography</a></li>
+        <li><a href="../../optometry/optometry-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Optometry</a></li>
+        <li><a href="../../pharmacy/pharmacy-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">Pharmacy</a></li>        
+        <li><a href="../../G.K/G-K-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">General Knowledge</a></li>
+        <li><a href="../../IQ/iq-intro.html" class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out">I.Q</a></li>
       </ul>
     </li>
    
@@ -85,7 +89,7 @@
 <section class="w-full md:w-3/4 mx-auto">
     <article class="bg-white p-6 rounded-xl shadow-md">
         <form id="quizForm">
-          <div class="mb-6 p-4 bg-gray-100 rounded-lg shadow-sm">
+          <div class="mb-6 p-4 bg-blue-50 rounded-lg shadow-sm">
   <h1 class="text-2xl font-semibold mb-2">Optometry & Visual Science Quiz</h1>
   <p class="text-base text-gray-700">
     Test your knowledge on core topics in optometry, ophthalmic optics, and visual perception. 
@@ -341,11 +345,22 @@ document.querySelectorAll('input[type="radio"]').forEach(radio => {
             </div>
         `;
         output += `
-            <div class="flex justify-between mt-6 text-blue-600 font-medium">
-              <a href="quizo2.html" id="prevset" title="Go to the previous set" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">← Previous</a>
-              <a href="quizo3.html" id="sameset" title="Review this set again" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">View Again</a>
-              <a href="quizo4.html" id="nextset" title="Go to the next set" class="px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">Next →</a>
+        <div class="w-full max-w-2xl mx-auto mt-10 px-4">
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-3 text-blue-600 font-medium">
+              <a href="quizo2.html" id="prevset" title="Go to Previous set"
+              class="w-full sm:w-auto text-center px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">
+              ← Previous
+              </a>
+              <a href="quizo3.html" id="sameset" title="Review this set again"
+              class="w-full sm:w-auto text-center px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">
+              View Again
+              </a>
+              <a href="quizo4.html" id="nextset" title="Go to the next set"
+              class="w-full sm:w-auto text-center px-4 py-2 border border-blue-500 rounded-md transition transform hover:scale-105 hover:bg-blue-100 shadow-md">
+              Next →
+              </a>
             </div>
+        </div>
         `;
         document.getElementById("quizForm").style.display = "none";
         const resultDiv = document.getElementById("finalResult");

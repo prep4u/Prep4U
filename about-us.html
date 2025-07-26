@@ -1,101 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Prep4U</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/web.css">
-    <link rel="stylesheet" href="css/bodysheet.css">
-    <link rel="icon" href="image/book-icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5417203851919488"
-     crossorigin="anonymous"></script>
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3GZEX94XD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="css/web.css" />
+    <link rel="stylesheet" href="css/bodysheet.css" />
+    <link rel="icon" href="image/book-icon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5417203851919488"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J3GZEX94XD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-J3GZEX94XD');
-</script>
-</head>
-<body>
-<nav>
-    <!-- Logo and Brand -->
-    <div class="header">
-      <i class="fa-solid fa-book book-icon"></i>
-      <a href="index.html" class="prep4U-text">Prep4U</a>
-    <!-- Hamburger Menu Button (mobile) -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-    </div>
+      gtag("config", "G-J3GZEX94XD");
+    </script>
+  </head>
+  <body>
+    <nav>
+      <!-- Logo and Brand -->
+      <div class="header">
+        <i class="fa-solid fa-book book-icon"></i>
+        <a href="prep4u.html" class="prep4U-text">Prep4U</a>
+        <!-- Hamburger Menu Button (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          &#9776;
+        </button>
+      </div>
 
-        <!-- Navigation Links -->
-   <div class="nav-links">
-    <ul class="trigger">
-    <li><a href="index.html">Home</a></li>
-   
-    <li class="has-dropdown">
-      <a href="#quiz">Quiz</a>
-      <ul>
-        <li><a href="radiology/rad-quiz-intro.html">Radiography</a></li>
-        <li><a href="radiology/rad-quiz-intro.html">Optometry</a></li>
-      </ul>
-    </li>
-   
-    <li class="has-dropdown">   
-      <a href="#subjects">Subjects</a>
-      <ul>
-        <li><a href="radiology/radiography-intro.html">Radiography</a></li>
-        <li><a href="optometry/optometry-intro.html">Optometry</a></li>
-      </ul>
-    </li>
-   
-    <li><a href="about-us.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</div>
-</nav>
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul class="trigger">
+          <li><a href="prep4u.html">Home</a></li>
 
+          <li class="has-dropdown">
+            <a href="#quiz">Quiz</a>
+            <ul>
+              <li>
+                <a
+                  href="radiology/rad-quiz-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Radiography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="optometry/opt-quiz-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Optometry</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pharmacy/phar-quiz-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Pharmacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="G.K/gk-quiz-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >General Knowledge</a
+                >
+              </li>
+              <li>
+                <a
+                  href="IQ/iq-quiz-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >I.Q</a
+                >
+              </li>
+            </ul>
+          </li>
 
-  <!-- Page Header -->
-  <header class="bg-white text-center py-10 px-4 rounded-xl shadow-md max-w-4xl mx-auto mt-6">
-    <h1 class="text-5xl sm:text-6xl font-bold text-gray-800">About Us</h1>
-  </header>
+          <li class="has-dropdown">
+            <a href="#subjects">Subjects</a>
+            <ul>
+              <li>
+                <a
+                  href="radiology/radiography-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Radiography</a
+                >
+              </li>
+              <li>
+                <a
+                  href="optometry/optometry-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Optometry</a
+                >
+              </li>
+              <li>
+                <a
+                  href="pharmacy/pharmacy-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >Pharmacy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="G.K/G-K-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >General Knowledge</a
+                >
+              </li>
+              <li>
+                <a
+                  href="IQ/iq-intro.html"
+                  class="hover:scale-105 hover:shadow-[0_8px_30px_rgb(0,123,255,0.3)] transition duration-300 ease-in-out"
+                  >I.Q</a
+                >
+              </li>
+            </ul>
+          </li>
 
-  <!-- Main Content -->
-   <main class="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto mt-8 px-4">
-        <section class="w-full md:w-3/4 mx-auto">
-            <article class="bg-white p-6 rounded-xl shadow-md">
-            <div class="container">
-  <p>Welcome to <strong>Prep4u</strong>, your trusted companion in preparing for objective exams with confidence and focus.</p>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <p>At Prep4u, we are committed to helping students, professionals, and exam aspirants sharpen their knowledge through well-structured and purposeful quiz practice sets. Our platform is designed to support your learning goals by offering a space where you can assess yourself, identify areas for improvement, and build confidence for your exams.</p>
+    <!-- Page Header -->
+    <header
+      class="bg-white text-center py-10 px-4 rounded-xl shadow-md max-w-4xl mx-auto mt-6"
+    >
+      <h1 class="text-5xl sm:text-6xl font-bold text-gray-800">About Us</h1>
+    </header>
 
-  <h2 style="font-size : 24px;">What We Offer</h2>
-  <ul>
-    <li><strong>Practice Sets:</strong> Organized quizzes that let you focus on specific subjects and topics, making your preparation more effective.</li>
-    <li><strong>Real Exam Patterns:</strong> Our practice sets mirror the structure and difficulty of actual objective exams to provide realistic preparation.</li>
-  </ul>
+    <!-- Main Content -->
+    <main class="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto mt-8 px-4">
+      <section class="w-full md:w-3/4 mx-auto">
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <div class="container">
+            <p>
+              Welcome to <strong>Prep4u</strong>, your trusted companion on the
+              journey to mastering objective exams with confidence and focus. We
+              are dedicated to providing you with high-quality practice quizzes
+              and insightful resources designed to strengthen your knowledge and
+              boost your exam readiness. Whether you’re a student aiming for
+              academic success or preparing for competitive tests, Prep4u is
+              here to support your learning every step of the way.
+            </p>
 
-  <p>Whether you're preparing for competitive exams, academic assessments, or entrance tests, <strong>Prep4u</strong> is here to make your practice journey more efficient and goal-oriented.</p>
+            <p>
+              At Prep4u, we are deeply committed to helping students,
+              professionals, and exam aspirants enhance their knowledge and
+              skills through carefully crafted and purposeful quiz practice
+              sets. Our platform is thoughtfully designed to support your unique
+              learning goals by providing an interactive space where you can
+              regularly assess your understanding, pinpoint areas that need
+              improvement, and steadily build the confidence required to excel
+              in your exams. Whether you are preparing for academic tests or
+              competitive certifications, Prep4u aims to be a reliable resource
+              that empowers you to achieve success through consistent practice
+              and self-evaluation.
+            </p>
+            <br />
+            <hr />
+            <h2>What We Offer</h2>
+            <ul>
+              <li>
+                <strong>Practice Sets:</strong> Our quizzes are thoughtfully
+                organized to help you focus on specific subjects and topics,
+                allowing for targeted practice that makes your exam preparation
+                more efficient and effective. By concentrating on areas that
+                matter most, you can strengthen your understanding, track your
+                progress, and maximize your study time for the best possible
+                results.
+              </li>
+              <li>
+                <strong>Real Exam Patterns:</strong>Our practice sets are
+                carefully designed to closely mirror the structure, format, and
+                difficulty level of actual objective exams. This approach
+                ensures that your preparation is as realistic and relevant as
+                possible, helping you become familiar with the types of
+                questions you’ll encounter and boosting your confidence on exam
+                day
+              </li>
+            </ul>
 
-  <h2 style="font-size : 24px;">Our Vision</h2>
-  <p>To empower learners through meaningful practice and help them reach their full potential. At Prep4u, we believe that smart preparation and consistency lead to success.</p>
+            <p>
+              Whether you’re gearing up for competitive exams, academic
+              assessments, or entrance tests, <strong>Prep4u</strong> is
+              dedicated to making your practice journey both efficient and
+              goal-oriented. Our resources are tailored to help you stay
+              focused, track your progress, and build the skills needed to
+              succeed, ensuring that every moment you spend practicing brings
+              you one step closer to achieving your goals.
+            </p>
+            <br />
+            <hr />
+            <h2>Our Vision</h2>
+            <p>
+              Our mission is to empower learners through meaningful and targeted
+              practice, helping them unlock their full potential and achieve
+              their academic and professional goals. At Prep4u, we firmly
+              believe that smart preparation, combined with consistent effort,
+              is the key to success. We recognize that exam preparation can
+              sometimes feel overwhelming or daunting, which is why we aim to
+              simplify the process by providing clear, structured, and
+              accessible practice materials that meet learners wherever they are
+              in their journey.
+            </p>
 
-  <p style="font-size: 20px;">Thank you for choosing <strong>Prep4u</strong>. Let’s move forward — one quiz at a time!</p>
-</div>
-<div class="progress-bar" data-width="75"></div>
-    </section>
+            <p>
+              We are dedicated to creating an inclusive and supportive learning
+              environment that encourages curiosity, perseverance, and growth.
+              Our thoughtfully designed quizzes and resources are tailored to
+              challenge users just enough to promote deep understanding without
+              causing frustration. By enabling learners to identify their
+              strengths and areas for improvement, Prep4u helps build not only
+              knowledge but also critical thinking skills and self-confidence.
+            </p>
+
+            <p>
+              Beyond just test preparation, we aspire to instill lifelong
+              learning habits that extend beyond exams, fostering a mindset of
+              continuous improvement and resilience. We believe that when
+              learners have the right tools, guidance, and motivation, they are
+              capable of overcoming obstacles and achieving remarkable success.
+            </p>
+
+            <p>
+              At Prep4u, your goals are our mission. We are here to support you
+              every step of the way—helping you stay focused, track your
+              progress, and celebrate your achievements—so you can approach your
+              exams with confidence and a sense of purpose. Together, we can
+              turn hard work into meaningful results and help you realize your
+              dreams.
+            </p>
+            <br />
+            <hr />
+            <p
+              style="
+                font-size: 20px !important;
+                font-family: 'Inter', system-ui, -apple-system, sans-serif;
+              "
+            >
+              Thank you for choosing <strong>Prep4u</strong>. We’re excited to
+              be part of your learning journey and are committed to supporting
+              you every step of the way. Let’s move forward together — one quiz
+              at a time! With each practice session, you’re building knowledge,
+              confidence, and momentum towards your goals. Remember, consistent
+              effort leads to success, and we’re here to help you achieve it.
+              Keep pushing forward, and let’s make every quiz count!
+            </p>
+          </div>
+          <div class="progress-bar" data-width="75"></div>
+        </article>
+      </section>
     </main>
- <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-gray-200 text-center p-4 mt-10 mx-auto w-full">
-        <p class="text-gray-700">&copy; 2025 Prep4U. All rights reserved.</p>
+      <p class="text-gray-700">&copy; 2025 Prep4U. All rights reserved.</p>
     </footer>
 
-<script src="web.js"></script>
-</body>
-</htnl>
-
-
+    <script src="web.js"></script>
+  </body>
+</html>

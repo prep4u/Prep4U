@@ -487,8 +487,8 @@
       B: [
         { name: 'Ward No. 8', short: '8', color: '#f97316', form: ['W'], p:1, w:1, d:0, l:0, gf:10, ga:3 },
         { name: 'Ward No. 5', short: '5', color: '#64748b', form: ['L'], p:1, w:0, d:0, l:1, gf:3, ga:10 },
-        { name: 'Ward No. 2', short: '2', color: '#10b981', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
-        { name: 'Ward No. 6', short: '6', color: '#dc2626', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
+        { name: 'Ward No. 2', short: '2', color: '#10b981', form: ['W'], p:1, w:1, d:0, l:0, gf:4, ga:1 },
+        { name: 'Ward No. 6', short: '6', color: '#dc2626', form: ['L'], p:1, w:0, d:0, l:1, gf:1, ga:4 },
         { name: 'Ward No. 10', short: '10', color: '#a855f7', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
       ]
     };
@@ -515,7 +515,7 @@
       B: [
         { title: 'Matches Group B', matches: [
           { home: 'Ward No. 8', away: 'Ward No. 5', date: '2083/02/07', time: '5:00 P.M', score: '10-3', venue: 'Sahid Smriti Khel Maidan' },
-          { home: 'Ward No. 2', away: 'Ward No. 6', date: '2083/02/07', time: '6:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
+          { home: 'Ward No. 2', away: 'Ward No. 6', date: '2083/02/07', time: '6:00 P.M', score: '4-1', venue: 'Sahid Smriti Khel Maidan' },
         
           { home: 'Ward No. 8', away: 'Ward No. 10', date: '2083/02/08', time: '7:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
           { home: 'Ward No. 5', away: 'Ward No. 2', date: '2083/02/09', time: '5:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
@@ -652,9 +652,9 @@
                       </div>
                       <div class="flex items-center gap-2 mx-4">
                         ${m.score ? `
-                          <span class="text-[12px] font-heading text-xl font-bold text-white">${m.score.split('-')[0]}</span>
+                          <span class="text-[14px] font-heading text-xl font-bold text-white">${m.score.split('-')[0]}</span>
                           <span class="text-slate-600">-</span>
-                          <span class="text-[12px] font-heading text-xl font-bold text-white">${m.score.split('-')[1]}</span>
+                          <span class="text-[14px] font-heading text-xl font-bold text-white">${m.score.split('-')[1]}</span>
                         ` : `
                           <span class="text-xs text-slate-500 uppercase">vs</span>
                         `}

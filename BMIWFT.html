@@ -178,6 +178,33 @@
     .elim-zone {
       border-left: 3px solid #ef4444;
     }
+    /* ===== knockout ===== */
+
+.knockout-card{
+  background:linear-gradient(145deg,#111827,#1e293b);
+  border:1px solid rgba(16,185,129,.15);
+  transition:.35s;
+}
+
+.knockout-card:hover{
+  transform:translateY(-6px);
+  border-color:#10b981;
+}
+
+.final-glow{
+  animation:glow 3s infinite;
+}
+
+@keyframes glow{
+  0%,100%{
+    box-shadow:0 0 0 rgba(245,158,11,0);
+  }
+  50%{
+    box-shadow:0 0 35px rgba(245,158,11,.35);
+  }
+}
+
+    
   </style>
 </head>
 <body class="court-pattern">
@@ -338,9 +365,7 @@
         <button onclick="showFixtureGroup('B')" id="btn-fixture-b" class="tab-btn px-6 py-2.5 rounded-xl text-sm font-semibold border border-slate-600 text-slate-300">
           Group B
         </button>
-        <button onclick="showFixtureGroup('C')" id="btn-fixture-c" class="tab-btn px-6 py-2.5 rounded-xl text-sm font-semibold border border-slate-600 text-slate-300">
-          Knockout
-        </button>
+       
       </div>
 
       <!-- Group A Fixtures -->
@@ -348,10 +373,65 @@
 
       <!-- Group B Fixtures -->
       <div id="fixture-group-b" class="hidden reveal"></div>
-      <!-- Group C Fixtures -->
-      <div id="fixture-group-c" class="hidden reveal"></div>
+      
     </div>
   </section>
+  <!-- KNOCKOUT -->
+<section class="max-w-6xl mx-auto px-4 py-16">
+
+  <h2 class="text-4xl font-black uppercase text-center mb-12">
+    Knockout Stage
+  </h2>
+
+  <!-- SEMIS -->
+  <div class="grid md:grid-cols-2 gap-8 mb-16">
+
+    <div class="knockout-card rounded-2xl p-6">
+
+      <h3 class="text-2xl font-bold text-emerald-400 mb-5">
+        Semi Final 1
+      </h3>
+
+      <div id="semi1"></div>
+
+    </div>
+
+    <div class="knockout-card rounded-2xl p-6">
+
+      <h3 class="text-2xl font-bold text-emerald-400 mb-5">
+        Semi Final 2
+      </h3>
+
+      <div id="semi2"></div>
+
+    </div>
+
+  </div>
+
+  <!-- FINAL -->
+  <div class="max-w-3xl mx-auto">
+
+    <div class="knockout-card final-glow rounded-3xl p-8">
+
+      <div class="text-center mb-8">
+
+        <div class="text-6xl mb-4">
+          🏆
+        </div>
+
+        <h2 class="text-5xl font-black text-yellow-400 uppercase">
+          Grand Final
+        </h2>
+
+      </div>
+
+      <div id="finalMatch"></div>
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- Stats Section -->
   <section id="stats" class="py-16 sm:py-24 relative">
@@ -405,8 +485,8 @@
         { name: 'Ward No. 9', short: '9', color: '#f59e0b', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
       ],
       B: [
-        { name: 'Ward No. 8', short: '8', color: '#f97316', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
-        { name: 'Ward No. 5', short: '5', color: '#64748b', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
+        { name: 'Ward No. 8', short: '8', color: '#f97316', form: ['W'], p:1, w:1, d:0, l:0, gf:10, ga:3 },
+        { name: 'Ward No. 5', short: '5', color: '#64748b', form: ['L'], p:1, w:0, d:0, l:1, gf:3, ga:10 },
         { name: 'Ward No. 2', short: '2', color: '#10b981', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
         { name: 'Ward No. 6', short: '6', color: '#dc2626', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
         { name: 'Ward No. 10', short: '10', color: '#a855f7', form: ['-'], p:0, w:0, d:0, l:0, gf:0, ga:0 },
@@ -434,7 +514,7 @@
       ],
       B: [
         { title: 'Matches Group B', matches: [
-          { home: 'Ward No. 8', away: 'Ward No. 5', date: '2083/02/07', time: '5:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
+          { home: 'Ward No. 8', away: 'Ward No. 5', date: '2083/02/07', time: '5:00 P.M', score: '10-3', venue: 'Sahid Smriti Khel Maidan' },
           { home: 'Ward No. 2', away: 'Ward No. 6', date: '2083/02/07', time: '6:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
         
           { home: 'Ward No. 8', away: 'Ward No. 10', date: '2083/02/08', time: '7:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
@@ -572,9 +652,9 @@
                       </div>
                       <div class="flex items-center gap-2 mx-4">
                         ${m.score ? `
-                          <span class="text-[10px] font-heading text-xl font-bold text-white">${m.score.split('-')[0]}</span>
+                          <span class="text-[12px] font-heading text-xl font-bold text-white">${m.score.split('-')[0]}</span>
                           <span class="text-slate-600">-</span>
-                          <span class="text-[10px] font-heading text-xl font-bold text-white">${m.score.split('-')[1]}</span>
+                          <span class="text-[12px] font-heading text-xl font-bold text-white">${m.score.split('-')[1]}</span>
                         ` : `
                           <span class="text-xs text-slate-500 uppercase">vs</span>
                         `}
@@ -592,7 +672,77 @@
         `;
       }).join('');
     }
+/* =========================
+   KNOCKOUT
+========================= */
 
+function renderKnockout(){
+
+  document.getElementById('semi1').innerHTML = `
+
+    <div class="space-y-4">
+
+      <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
+        <span>Winner Group A</span>
+        <span class="text-emerald-400">A1</span>
+      </div>
+
+      <div class="text-center text-slate-500">
+        VS
+      </div>
+
+      <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
+        <span>Runner Up Group B</span>
+        <span class="text-yellow-400">B2</span>
+      </div>
+
+    </div>
+
+  `;
+
+  document.getElementById('semi2').innerHTML = `
+
+    <div class="space-y-4">
+
+      <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
+        <span>Winner Group B</span>
+        <span class="text-emerald-400">B1</span>
+      </div>
+
+      <div class="text-center text-slate-500">
+        VS
+      </div>
+
+      <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
+        <span>Runner Up Group A</span>
+        <span class="text-yellow-400">A2</span>
+      </div>
+
+    </div>
+
+  `;
+
+  document.getElementById('finalMatch').innerHTML = `
+
+    <div class="grid grid-cols-3 items-center gap-4">
+
+      <div class="bg-slate-800 rounded-2xl p-5 text-center">
+        Winner SF1
+      </div>
+
+      <div class="text-center text-4xl font-black text-yellow-400">
+        VS
+      </div>
+
+      <div class="bg-slate-800 rounded-2xl p-5 text-center">
+        Winner SF2
+      </div>
+
+    </div>
+
+  `;
+
+}
     // ==================== RENDER STATS ====================
     function renderStats() {
       const allTeams = [...TEAMS.A, ...TEAMS.B];
@@ -664,8 +814,7 @@ function showFixtureGroup(group){
   document.getElementById('fixture-group-b')
     .classList.toggle('hidden',group!=='B');
 
-  document.getElementById('fixture-group-c')
-    .classList.toggle('hidden',group!=='C');
+
 
   document.getElementById('btn-fixture-a')
     .classList.toggle('active',group==='A');
@@ -673,8 +822,7 @@ function showFixtureGroup(group){
   document.getElementById('btn-fixture-b')
     .classList.toggle('active',group==='B');
 
-  document.getElementById('btn-fixture-c')
-    .classList.toggle('active',group==='C');
+  
 }
 
     // ==================== SCROLL REVEAL ====================
@@ -705,16 +853,17 @@ function showFixtureGroup(group){
     }
 
     // ==================== INIT ====================
-    function init() {
-      renderStandings('A');
-      renderStandings('B');
-      renderFixtures('A');
-      renderFixtures('B');
-      renderStats();
-      renderTopScorers();
-      lucide.createIcons();
-      handleReveal();
-    }
+   function init() {
+  renderStandings('A');
+  renderStandings('B');
+  renderFixtures('A');
+  renderFixtures('B');
+  renderKnockout(); // add this
+  renderStats();
+  renderTopScorers();
+  lucide.createIcons();
+  handleReveal();
+}
 
     window.addEventListener('scroll', () => {
       handleReveal();

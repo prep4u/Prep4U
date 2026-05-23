@@ -785,7 +785,7 @@ function renderKnockout(){
       const totalGoals = allTeams.reduce((s, t) => s + t.gf, 0);
       const totalMatches = allTeams.reduce((s, t) => s + t.p, 0) / 2;
       const totalWins = allTeams.reduce((s, t) => s + t.w, 0);
-      const totalDraws = allTeams.reduce((s, t) => s + t.d, 0);
+      const totalDraws = allTeams.reduce((s, t) => s + t.d, 0) / 2;
       const avgGoals = (totalGoals / totalMatches).toFixed(1);
 
       const statsData = [

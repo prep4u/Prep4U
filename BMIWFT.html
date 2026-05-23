@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -519,8 +520,8 @@
     const FIXTURES = {
       A: [
         {  title: 'Matches Group A', matches: [
-          { home: 'Ward No. 1', away: 'Ward No. 7', date: '2083/02/06', time: '6:00 P.M', score: 'POST-PONED', venue: 'Sahid Smriti Khel Maidan' },
-          { home: 'Ward No. 3', away: 'Ward No. 4', date: '2083/02/06', time: '7:00 P.M', score: 'POST-PONED', venue: 'Sahid Smriti Khel Maidan' },
+          { home: 'Ward No. 1', away: 'Ward No. 7', date: '2083/02/06 POSTPONED', time: '6:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
+          { home: 'Ward No. 3', away: 'Ward No. 4', date: '2083/02/06 POSTPONED.', time: '7:00 P.M', score: 'V-S', venue: 'Sahid Smriti Khel Maidan' },
        
           { home: 'Ward No. 1', away: 'Ward No. 9', date: '2083/02/07', time: '7:00 P.M', score: '2-5', venue: 'Sahid Smriti Khel Maidan' },
           { home: 'Ward No. 7', away: 'Ward No. 3', date: '2083/02/08', time: '5:00 P.M', score: '4-1', venue: 'Sahid Smriti Khel Maidan' },
@@ -706,6 +707,10 @@ function renderKnockout(){
   document.getElementById('semi1').innerHTML = `
 
     <div class="space-y-4">
+      <div class="flex items-center justify-between mb-3">
+                      <span class="text-[14px] text-slate-500 uppercase tracking-wider">2083/02/14 • 6:00 </span>
+                      <span class="text-[10px] text-slate-600 uppercase tracking-wider">Sahid Smriti Khel Maidan</span>
+                    </div>
 
       <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
         <span>Winner Group A</span>
@@ -728,7 +733,10 @@ function renderKnockout(){
   document.getElementById('semi2').innerHTML = `
 
     <div class="space-y-4">
-
+<div class="flex items-center justify-between mb-3">
+                      <span class="text-[14px] text-slate-500 uppercase tracking-wider">2083/02/14 • 7:00 </span>
+                      <span class="text-[10px] text-slate-600 uppercase tracking-wider">Sahid Smriti Khel Maidan</span>
+                    </div>
       <div class="bg-slate-800 rounded-xl p-4 flex justify-between">
         <span>Winner Group B</span>
         <span class="text-emerald-400">B1</span>
@@ -748,7 +756,10 @@ function renderKnockout(){
   `;
 
   document.getElementById('finalMatch').innerHTML = `
-
+<div class="flex items-center justify-between mb-3">
+    <span class="text-[16px] text-slate-500 uppercase tracking-wider">2083/02/16 • 6:00 </span>
+      <span class="text-[14px] text-slate-600 uppercase tracking-wider">Sahid Smriti Khel Maidan</span>
+      </div>
     <div class="grid grid-cols-3 items-center gap-4">
 
       <div class="bg-slate-800 rounded-2xl p-5 text-center">
